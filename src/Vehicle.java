@@ -28,27 +28,27 @@ public abstract class Vehicle implements Moveable{
     }
 
     @Override
-    public String turnLeft() {
+    public void turnLeft() {
         setDirection("w lewo");
-        return direction;
+        System.out.println(direction);;
     }
 
     @Override
-    public String turnRight() {
+    public void turnRight() {
         setDirection("w prawo");
-        return direction;
+        System.out.println(direction);;
     }
 
     @Override
-    public String goForward() {
+    public void goForward() {
         setDirection("do przodu");
-        return direction;
+        System.out.println(direction);
     }
 
     @Override
-    public String goBack() {
+    public void goBack() {
         setDirection("do tylu");
-        return direction;
+        System.out.println(direction);;
     }
 
 }

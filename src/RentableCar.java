@@ -4,10 +4,12 @@ public class RentableCar extends Car implements Rentable, Moveable{
     }
 
     private boolean isCarRented = false;
+    Person person;
+
     @Override
     public void rent(String firstName, String lastName, String id) {
         setCarRented(true);
-        Person person = new Person(firstName, lastName, id);
+        person = new Person(firstName, lastName, id);
         System.out.println("Osoba wypozyczajaca: " + person.toString());
     }
 
@@ -19,7 +21,7 @@ public class RentableCar extends Car implements Rentable, Moveable{
     @Override
     public void handOver() {
         setCarRented(false);
-        Person person = null;
+        person = null;
         System.out.println("zwroc");
     }
 

@@ -18,5 +18,8 @@ public class CarRental {
         rentableCars[1].handOver();
         System.out.println("Wypozyczony: " + rentableCars[0].isRent());
 
+        rentableCars[1].goForward();
+
+
     }
 }
