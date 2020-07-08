@@ -9,10 +9,8 @@ public abstract class Vehicle implements Moveable{
 
     @Override
     public String toString() {
-        return "Vehicle{" +
-                "name='" + name + '\'' +
-                ", yearMade=" + yearMade +
-                '}';
+        return "Samochod: " + name +
+                ", rocznik: " + yearMade;
     }
 
     public String getName() {

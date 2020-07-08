@@ -1,6 +1,6 @@
 public interface Rentable {
-    void rent(String firstName, String lastName, String id);
-    void handOver();
+    String rent(Person person);
+    String handOver();
     boolean isRent();
 
 }
