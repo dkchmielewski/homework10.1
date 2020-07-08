@@ -6,23 +6,5 @@ public class MotorBike extends Vehicle{
         this.speedLimit = speedLimit;
     }
 
-    @Override
-    public void turnLeft() {
 
-    }
-
-    @Override
-    public void turnRight() {
-
-    }
-
-    @Override
-    public void goForward() {
-
-    }
-
-    @Override
-    public void goBack() {
-
-    }
 }

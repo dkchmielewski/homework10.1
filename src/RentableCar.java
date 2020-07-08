@@ -5,10 +5,10 @@ public class RentableCar extends Car implements Rentable, Moveable{
 
     private boolean isCarRented = false;
     @Override
-    public String rent(Person person) {
-        System.out.println("Osoba wypozyczajaca: " + person.toString());
+    public void rent(String firstName, String lastName, String id) {
         setCarRented(true);
-        return null;
+        Person person = new Person(firstName, lastName, id);
+        System.out.println("Osoba wypozyczajaca: " + person.toString());
     }
 
     @Override
@@ -17,10 +17,10 @@ public class RentableCar extends Car implements Rentable, Moveable{
     }
 
     @Override
-    public String handOver() {
-        System.out.println("zwroc");
+    public void handOver() {
         setCarRented(false);
-        return null;
+        Person person = null;
+        System.out.println("zwroc");
     }
 
     @Override
@@ -31,4 +31,5 @@ public class RentableCar extends Car implements Rentable, Moveable{
     public void setCarRented(boolean carRented) {
         isCarRented = carRented;
     }
+
 }
